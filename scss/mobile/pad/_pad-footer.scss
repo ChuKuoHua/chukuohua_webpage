@@ -1,0 +1,18 @@
+@include pad(){
+    .footer{
+        .about-me{
+            display: none;
+        }
+        .border-left{
+            border: 0;
+        }
+        .conn-icon > li{
+            margin-left: 0px !important;
+        }
+    }
+    .fa-instagram,
+    .fa-github,
+    .fa-facebook-square{
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,35 @@
+.round-bg{
+    border-radius: 50%;
+    background: #8dbac129;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-left: 37.5%;
+    top: 495px;
+    box-shadow: 0 0 5px #352f2fa6;
+    cursor: none;
+    &:hover{
+        background: #71400d96;
+        top: 415px;
+        box-shadow: 0 0 15px #dc642c87;
+        -o-transition: all 1s;
+        transition: all 1s;
+        .tit-bor-left,.tit-bor-right{
+            top: 95px;
+            transition: all 1s;
+        }
+    }
+}
+
+//title border
+.tit-bor-left,.tit-bor-right{
+    position: absolute;
+    top: 115px;
+    width: 28px;
+}
+.tit-bor-left{
+    left: 11%;
+}
+.tit-bor-right{
+    right: 10%;
+}

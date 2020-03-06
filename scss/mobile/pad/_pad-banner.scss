@@ -1,0 +1,31 @@
+@include pad(){
+    .banner{
+        height: 400px;  
+        .title{
+            top: 16px;
+            margin-left: 26%;
+            width: 120px;
+            z-index: 0;
+            h1{
+                line-height: 30px;
+            }
+        }      
+    }
+    .round-bg{
+        border-radius: 5%;
+        width: 200px;
+        height: 115px;
+        margin-left: 38%;
+        top: 235px;
+        &:hover{
+            background: #8dbac129;
+            top: 235px;
+            box-shadow: 0 0 5px #352f2fa6;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+    }
+    .tit-bor-left,.tit-bor-right{
+        display: none;
+    }
+}

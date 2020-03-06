@@ -1,0 +1,52 @@
+@include iphone(){
+    .footer{
+        display: block;
+        .navber{
+            padding: 0 0 4em 0;
+            margin-right: 0;
+            float: none;
+            background: #354950;
+            .footer-me-logo{
+                width: 180px;
+                @include block-center;
+            }
+            .conn-icon{
+                background: #f1f0f0;
+                left: 0;
+                float: none;
+                padding: 0.6em 6em;
+                width: 100%;
+                bottom: -20px;
+            }            
+        }
+        .conn{
+            float: none;
+            h3{
+                margin-left: 0;
+                text-align: center;
+            }
+            li{
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        .Copright{
+            background: #354950;
+        }
+    }
+    .fa-instagram,
+    .fa-github,
+    .fa-facebook-square {
+        font-size: 36px;
+        padding: 0 $pad-m;
+    }
+}
+@include iphone6(){
+    .conn-icon{
+        padding: 0.6em 0 !important;
+        li{
+            padding-left: 0 !important;
+            width: 33.33333%;
+        }
+    }
+}

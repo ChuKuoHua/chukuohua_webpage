@@ -1,0 +1,96 @@
+.timeline{  
+    color:  #222;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &:before{
+        content: "";
+        width: 4px;
+        height: 100%;        
+        position: absolute;
+        margin-left:50%;
+        top: 10px;
+        background: rgba(80,80,80,0);
+        background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, #222 8%, #222 92%, rgba(80,80,80,0) 100%);
+        background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, #222 8%, #222 92%, rgba(80,80,80,0) 100%);
+        background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, #222 8%, #222 92%, rgba(80,80,80,0) 100%);
+        background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, #222 8%, #222 92%, rgba(80,80,80,0) 100%);
+        background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, #222 8%, #222 92%, rgba(80,80,80,0) 100%);
+    }    
+}
+//timeline-group
+.timeline-group{
+    position: relative;
+    &:not(:first-of-type){
+        margin-top: 15em;
+    }
+}
+//timeline-year
+.timeline-year,.timeline-date{
+    color: #fff;
+    background-color:#222;
+}
+.timeline-year{
+    font-size:22px;
+    text-align: center;
+    padding: .3em 1em;
+    width:50px;
+}
+.timeline-year{
+    @include block-center;
+    &:not(:first-of-type){
+        margin-top: 2.8em;
+    }
+}
+//timeline-box
+.timeline-box{
+    position: relative; 
+}
+//timeline-date
+.timeline-date{
+    min-width: 65px;
+    width:30px;
+    margin:0px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  //month
+  .timeline-month{
+    font-size: 18px;
+}
+  //post
+.timeline-post{
+    position: absolute;
+    width:32%;
+    top:-28px;
+    z-index:10;
+    padding: .8em 2em;
+    border-radius: 5px;  
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+    background-color: #fff;
+}
+.right{
+    right:2%;
+    border-left: 3px solid #222;
+}
+.left{
+    left:1%;
+    border-right: 3px solid #222;
+}
+//timeline boder
+.box-left,.box-right{
+    background-color: #222;
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 3px;    
+}
+.box-left{
+    margin-left: 27%;
+    top:18px;
+}
+.box-right{
+    margin-left: 53%;
+    top:18px;
+}

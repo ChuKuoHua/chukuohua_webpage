@@ -1,0 +1,42 @@
+.content{    
+    background: #fff;    
+    h2{
+        margin-bottom: $mar-ms;        
+        font-weight: bold;
+        font-size: $font-32;
+        letter-spacing: 5px;
+    }
+    .rotate-box{
+        margin:0 -80px;
+        padding: $pad-m;
+        background: linear-gradient(45deg, #457d92, #063c4c);
+        background: -moz-linear-gradient(45deg, #457d92, #063c4c);
+        background: -webkit-linear-gradient(45deg, #457d92, #063c4c);
+        background: -o-linear-gradient(45deg, #457d92, #063c4c);
+        background: -ms-linear-gradient(45deg, #457d92, #063c4c);
+        transform: rotate(-5deg);
+        display: grid;
+        padding: $pad-xl 0;        
+        .rotate-fixed{
+            transform: rotate(5deg);
+        }
+    }
+    .about{
+        display: table;
+        h2{
+            color: #1e2021;
+            text-align: left;
+        }
+        .me-logo{
+            width: 200px;
+            float: left;
+            margin-left: $mar-ms;
+        }
+        .introduction{
+            padding-top: $pad-ms;
+            margin-top: $mar-ms;
+            margin-left: 280px;
+            line-height: 26px;
+        }
+    }
+}

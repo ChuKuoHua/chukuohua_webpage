@@ -1,0 +1,30 @@
+.banner{    
+    height: 550px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-image: url(../images/banner.jpg);
+    overflow: hidden;
+    .title{        
+        position: absolute;
+        top: 25px;
+        margin-left: 32%;
+        width: 205px;
+        color: white;
+        z-index: 1000;
+        h1{
+            letter-spacing: 3px;
+            line-height: 70px;
+            font-size: 36px;
+            margin-top: 26px;
+            margin-left: -10px;
+            transition: all 1s;
+        }
+        p{
+            margin-left: 5px ;
+            letter-spacing: 1px;
+            line-height: 1.2em;
+            transition: all 1s;
+        }
+    } 
+}

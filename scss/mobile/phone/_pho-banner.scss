@@ -1,0 +1,25 @@
+@include iphone(){
+    .banner .title {
+        position: static;
+        background: #8ba7a06b;
+        margin: 200px auto;
+        padding: $pad-ms;
+        border-radius: 20%;
+        display: block;
+        width: 120px;   
+        color: #171919;
+        font-weight: bold;     
+        p{
+            margin-left: 0;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    .round-bg{
+        display: initial;
+    }
+}
+

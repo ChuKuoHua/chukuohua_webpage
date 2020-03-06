@@ -1,0 +1,64 @@
+.works-card{
+    position: relative;
+    display: grid;
+} 
+.worksbox{
+    margin: $mar-m 0;
+    float: left;
+    width: 100%;
+    height: 100%;    
+    h3{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: $mar-m;
+        margin-top:1.3em;
+    }    
+}
+.works-Intro{
+    float: left;
+    margin: $mar-m $mar-ms;
+}
+.works-images{
+    position: relative;
+    float: right;
+    overflow: hidden;
+    border: 1px solid #827a7a;
+    box-shadow: 0 0 5px #332e2e;
+}
+.Use-skills{    
+    li{
+        padding:5px 8px;
+        line-height: 26px;
+    }    
+}
+.w-zoom{
+    max-width: 100%;
+    width: 450px;
+}
+.fa-link{
+    position: absolute;
+    z-index: 35;
+    top: 45%;
+    left: 45%;
+    font-size: 50px;
+    color: #161616;
+    opacity: 0;
+    transition: all 1s;
+    &.active{
+        opacity: 1;
+    }
+}
+/*images-zoom-glass*/
+#w1-zoom,#w2-zoom,#w3-zoom{     
+    transition: transform 1.2s;
+    &.active{
+        transform: scale(1.3);
+        filter: blur(3px);
+    }
+} 
+
+.m-works-card{
+    display: none;       
+}

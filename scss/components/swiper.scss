@@ -1,0 +1,29 @@
+.swiper-container{
+    float: left;
+    width: 45%;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 45%;
+    --swiper-navigation-size: 26px;
+    color: #fff;
+}
+//works-swiper
+.works-swiper-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 0 10px 0;
+    z-index: 1;
+}
+.swiper-pagination-bullet{
+    border-radius: 40%;
+}
+.swiper-pagination-bullet-active{
+    background: #1d1b1a;
+    width: 30px;
+}

@@ -1,0 +1,64 @@
+.header{ 
+    margin-top: 10px; 
+    z-index: 1001;
+    &.active{
+        margin-top: 0px; 
+        background: rgba(76, 185, 199, 0.79);
+        transition: all .2s;
+        box-shadow: 0 0 5px #192f31;
+        .scrollTop,p{
+            color: #2b2929 !important;  
+            border-radius: 0% !important;        
+        }
+    }
+    .myicon{
+        float: left;
+        padding: 10px 0;
+        p{
+            position: absolute;
+            width: 120px;
+            font-size: $font-ms;
+            color: #59cbdaf2;
+            top: 37px;
+            left: 50px;
+            font-family: $font-f;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .menu{
+        float: right;
+        li{
+            float: left;   
+            padding: 28px 0;    
+            font-family: $font-f;  
+            .scrollTop{
+                padding: 28px 20px;
+                color: $linkColor;
+                font-weight: bold;
+                &:hover{
+                    background: #148294;
+                    transition: all .5s;
+                    border-radius: 8%;   
+                }
+                &.active{
+                    padding-bottom: 24px;
+                    border-bottom:5px solid #354950;    
+                }             
+            }
+        }
+    }
+    .m-link,.aside{
+        display: none;
+    }
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+

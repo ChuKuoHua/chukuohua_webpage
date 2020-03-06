@@ -1,0 +1,98 @@
+.footer{
+    background: #354950;
+    display: grid;
+    box-shadow: 0 0 5px #000;
+    .navber{
+        padding: 0em 1em 4em 1em;
+        margin-right: 2em;
+        float: left;
+        background: #d9e6e6;
+        .footer-me-logo{
+            width: 150px;
+            border-radius: 0 0 10% 10%;
+            box-shadow: 0 0 3px #111b1f;            
+        }
+        .conn-icon{
+            position: absolute;
+            bottom: 20px;
+            left: 18px;
+            float: right;
+            padding-top: $pad-s;
+            width: 150px;
+            li{
+                margin-left: 5px;
+                padding-left: $pad-s;
+                float: left;
+                font-size: 26px;                
+            }
+        }
+    }
+    /* icon */
+    .fa-instagram{
+        color: #DB4437;
+    }
+    .fa-github{
+        color: #353738; 
+    }
+    .fa-facebook-square{
+        color: #3A5795;
+    }
+    /* icon end */
+    .about-me,.conn{
+        float: left;
+        padding-top: 3.2em;
+        color: #fff;
+        h3{
+            font-size: $font-l;
+            padding-bottom: $pad-m;
+        }
+    }
+    .about-me{        
+        width: 35%;
+        p{
+            line-height: $textHeight;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+    }    
+    .conn{
+        float: right;
+        padding-bottom: $pad-l;
+        h3{
+           margin-left: 1.6em;
+        }
+        li{
+            margin-left: $mar-ms;
+            padding-bottom:$pad-s;
+            letter-spacing: 2px;
+        }        
+    }
+    .border-left{
+        border-left: 3px solid #d9e6e6;
+    }
+    .top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: #dadada9e;
+        border: 1px solid #dadada6e;
+        display: none;
+        z-index: 999;
+        a{
+            padding: 13px 15px;
+            color: #14224b;
+            &:hover{
+                color: #b93838;
+            }
+        }
+        &:hover{
+            box-shadow: 0 0 5px #d26d18;
+        }
+    }  
+    .Copright{
+        display: block;
+        background: #4b5454;
+        color: #fffafa;
+        padding: 10px 0;
+    }
+}
