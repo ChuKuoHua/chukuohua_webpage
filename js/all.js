@@ -9,15 +9,15 @@ $(document).ready(function(){
     //menuscroll
     $('.scrollTop').click(function(e){
         e.preventDefault();
-        var target = $(this).attr('href');
-        var targetPos = $(target).offset().top;
+        let target = $(this).attr('href');
+        let targetPos = $(target).offset().top;
         $('html,body').animate({scrollTop:targetPos},1000);
     });
-    var showSkill = false;
+    let showSkill = false;
     $(window).scroll(function(){  
         //menu&top animate
-        var topscroll=$(window).scrollTop();   
-        var menu = $('.header');     
+        let topscroll=$(window).scrollTop();   
+        let menu = $('.header');     
         if(topscroll > 50){
             $('.top').slideDown(1000); 
             menu.addClass('active'); 
@@ -27,12 +27,12 @@ $(document).ready(function(){
             menu.removeClass('active');   
             $('.about-bor').removeClass('active');       
         };
-        var scrollPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
+        let scrollPos = $(window).scrollTop();
+        let windowHeight = $(window).height();
         $('.scrollTop').each(function(){
-            var target = $(this).attr('href');
-            var targetPos = $(target).offset().top;
-            var targetHeight = $(target).outerHeight();
+            let target = $(this).attr('href');
+            let targetPos = $(target).offset().top;
+            let targetHeight = $(target).outerHeight();
             if(targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos){
             $('.scrollTop').removeClass('active');
             $(this).addClass('active');
@@ -42,7 +42,7 @@ $(document).ready(function(){
         });
         //animated
         $('.animated').each(function(){
-            var thisPos = $(this).offset().top; 
+            let thisPos = $(this).offset().top; 
             if((windowHeight + scrollPos) >= thisPos){
             $(this).addClass('fadeIn');
             $('.about-bor').addClass('active');     
@@ -52,18 +52,18 @@ $(document).ready(function(){
             }
         })
         //progress bar        
-        var skillTop = $('#skills').position().top;
+        let skillTop = $('#skills').position().top;
         if(skillTop <= (scrollPos+windowHeight/2) && !showSkill){
             showSkill = true;
             $('#skills .progress-bar').each(function(){
-                var thisValue = $(this).data('progress');
+                let thisValue = $(this).data('progress');
                 //console.log('thisValue',thisValue)
                 $(this).css('width',thisValue + '%');
             })
         };
     });     
     // swiper
-    var swiper = new Swiper('.swiper-container', {
+    let swiper = new Swiper('.swiper-container', {
         slideNextClass:'skills-button-next',
         slidePrevClass:'skills-button-prev',
         navigation: { 
@@ -71,33 +71,48 @@ $(document).ready(function(){
           prevEl: '.skills-button-prev',
         },
     }); 
-    var worksSwiper = new Swiper('.works-swiper-container', {
+    let worksSwiper = new Swiper('.works-swiper-container', {
         pagination: {
             el: '.works-pagination',
             dynamicBullets: true,
 		},
     }); 
     //works-image
-    var wimg = $('#w-img');
-    var wimg2 = $('#w-img2');
-    var wimg3 = $('#w-img3');
+    const wimg = $('#w-img'),
+          wimg2 = $('#w-img2'),
+          wimg3 = $('#w-img3'),
+          wimg4 = $('#w-img4');
     wimg.mouseenter(function(e){ 
-        $('#link,#w1-zoom').addClass('active');   
+        $('#link,#w1-zoom').addClass('active');
+        $('#code,#w1-zoom').addClass('active');
     });
     wimg.mouseleave(function(e){ 
         $('#link,#w1-zoom').removeClass('active');
+        $('#code,#w1-zoom').removeClass('active');
     });
     wimg2.mouseenter(function(e){ 
+        $('#code2,#w2-zoom').addClass('active');
         $('#link2,#w2-zoom').addClass('active');
     });
     wimg2.mouseleave(function(e){ 
+        $('#code2,#w2-zoom').removeClass('active');
         $('#link2,#w2-zoom').removeClass('active'); 
     });
     wimg3.mouseenter(function(e){ 
+        $('#code3,#w3-zoom').addClass('active');
         $('#link3,#w3-zoom').addClass('active'); 
     });
     wimg3.mouseleave(function(e){ 
+        $('#code3,#w3-zoom').removeClass('active');
         $('#link3,#w3-zoom').removeClass('active');
+    });
+    wimg4.mouseenter(function(e){ 
+        $('#code4,#w4-zoom').addClass('active');
+        $('#link4,#w4-zoom').addClass('active'); 
+    });
+    wimg4.mouseleave(function(e){ 
+        $('#code4,#w4-zoom').removeClass('active');
+        $('#link4,#w4-zoom').removeClass('active');
     });
 
     /* 響應式選單動畫 */
@@ -116,7 +131,7 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active'); 
     })    
     //動畫移除
-    var w = $(window).width();
+    let w = $(window).width();
     console.log(w)
     if (w < 769 && w > 569){
         $('.swiper-container').removeClass('animated');
