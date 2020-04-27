@@ -602,7 +602,7 @@ a {
   max-width: 100%;
   width: 450px; }
 
-.fa-link, .fa-code {
+.fa-link, .codeIcon {
   position: absolute;
   top: 45%;
   padding: 10px;
@@ -612,7 +612,7 @@ a {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
-  .fa-link.active, .fa-code.active {
+  .fa-link.active, .codeIcon.active {
     opacity: 1; }
 
 .fa-link {
@@ -624,12 +624,12 @@ a {
     background: #c35825;
     color: #ecf1f5; }
 
-.fa-code {
+.codeIcon {
   -webkit-box-shadow: 0 0 5px inset;
   box-shadow: 0 0 5px inset;
   left: 53%;
   color: #13695d; }
-  .fa-code:hover {
+  .codeIcon:hover {
     background: #13695d;
     color: #ecf1f5; }
 
